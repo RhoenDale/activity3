@@ -1,0 +1,81 @@
+<!-- 
+  This is the main HTML document for the "Create an Account" page.
+  It includes a header, a main content area with a background image, 
+  and a form for users to create a new account.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title of the page -->
+  <title>Create an Account</title>
+
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Main container for the page content -->
+  <div class="container">
+
+    <!-- Left panel with background image and text -->
+    <div class="left-panel">
+      <div class="header">
+        <div class="logo">AMU</div>
+        <a href="#" class="back-btn">Back to website →</a>
+      </div>
+      <div class="content">
+        <h1>Capturing Moments, Creating Memories</h1>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span class="active"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right panel with the account creation form -->
+    <div class="right-panel">
+      <div class="login-form">
+        <h2>Create an account</h2>
+        <p>Already have an account? <a href="#">Log in</a></p>
+
+        <!-- Account creation form -->
+        <form id="registrationForm">
+          <div class="name-fields">
+            <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
+          </div>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <div class="password-field">
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <i class="fas fa-eye" id="togglePassword"></i>
+          </div>
+          <div class="terms">
+            <input type="checkbox" id="terms" checked>
+            <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+          </div>
+          <button type="submit" class="create-account-btn" id="submitBtn">Create account</button>
+        </form>
+
+        <!-- Divider and social login options -->
+        <div class="divider">Or register with</div>
+        <div class="social-login">
+          <button class="google-btn"><i class="fab fa-google"></i> Google</button>
+          <button class="apple-btn"><i class="fab fa-apple"></i> Apple</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
